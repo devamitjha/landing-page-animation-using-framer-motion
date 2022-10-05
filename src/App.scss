@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+$light_green:#effffa;
+$dark_green:#14da8f;
+$black:#000000;
+$white:#fff;
+.dflex{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+}
+body{
+  display: block;
+  width:100%;
+  height:100%;
+  background-color:$white;
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;  
+}
+header{
+  @extend .dflex;
+  justify-content: space-between;
+  padding:0 13%;
+  height:120px;
+  .logo_wrapper{
+    font-size:32px;
+    font-weight: 600;
+    span{
+      color:$dark_green;
+    }
+  }
+  .menu_container{
+    @extend .dflex;
+    justify-content: flex-end;
+    width:600px;
+    height:56px;
+    span{
+      display:inline-flex;
+      align-items: center;
+      justify-content: flex-start;
+      position: relative;
+      height:100%;
+      +span{
+        &:before{
+          content:"";
+          position: absolute;
+          width:2px;
+          height: 50%;
+          background-color:#bdbdbd;
+          left:-36px;
+          top:50%;
+          transform:translateY(-50%);
+        }
+      }
+      .icon{
+        display:inline-flex;
+        +.icon{
+          margin-left:20px;
+        }
+      }
+      &:nth-child(1){
+        width:22%;
+      }
+      &:nth-child(2){
+        width:42%;
+        .icon{
+          margin-right:20px;
+        }
+      }
+      &.menu{
+        @extend .dflex;
+        width:56px;
+        height:56px;
+        background-color: $dark_green;
+        color:$white;
+        border-radius: 8px;
+        cursor: pointer;
+        flex-direction: column;
+        span{
+          display: block;
+          width:20px;
+          height:3px;
+          background-color:$white;
+          border-radius: 3px;
+          position:relative;
+          +span{
+            margin-top:5px;
+            &:before{
+              content:none;
+            }
+          }
+          &:nth-child(2){
+            margin-left:8px;
+          }
+        }
+      }
+    }
+  }
+}
+
+//content_wrapper
+.content_wrapper{
+  width:80%;
+  margin:0 auto;
+  @extend .dflex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $light_green;
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  border-radius: 16px;
+  padding:3%;
+  .left_content_wrapper{
+    width:48%;
+    h2{
+      font-size:3.3vw;
+      font-weight: 600;
+      line-height: 1.3;
+      overflow: hidden;
+      span{
+        display: inline-block;  
+        span.second{
+          margin-left:10px;
+        }      
+      }
+    }
+    p{
+      font-size:1.02vw;
+      color:#333;
+      margin:20px 0 30px 0;
+    }
+    .btn_group{
+      @extend .dflex;
+      width:70%;
+      justify-content: space-between;
+      .btn{
+        @extend .dflex;
+        width:48%;
+        height:56px;
+        font-size: 20px;
+        border-radius: 8px;
+        font-weight: 600;
+        &.btn_primary{
+          background-color: $black;
+          color:$white;
+          svg{
+            margin-left:8px;
+          }
+        }
+        &.btn_secondary{
+          background-color:$white;
+          color:$black;
+          border:1px solid $black;
+        }
+      }
+    }
+    .review_container{
+      margin-top:50px;
+      p.total_review{
+        font-weight: 600;
+        font-size: 20px;
+        color:$black;
+        margin:0;
+      }
+      p.more_review{
+        color:#333;
+        font-weight: 400;
+        font-size: 16px;
+        margin:20px 0 0;
+      }
+      span{
+        display:inline-flex;
+        @extend .dflex;
+        width:30px;
+        height:30px;
+        background-color: $dark_green;
+        border-radius: 8px;
+        margin-top: 10px;
+        +span{
+          margin-left:8px;
+        }
+      }
+    }
+  }
+  .right_content_wrapper{
+    width:48%;
+    @extend .dflex;
+    justify-content: flex-end;
+    img{
+      display: block;
+      width:100%;
+    }
+  }
+}
+
+//service_container
+.service_container{
+  display:block;
+  width:80%;
+  margin:80px auto 0 auto;
+  .title_wrapper{
+    overflow: hidden;
+    .service_title{
+      display:block;
+      text-align: center;
+      color:$dark_green;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      font-size: 1.01vw;
+      font-weight: 600;
+      overflow: hidden;
+    }    
+  }
+  h2{
+     font-size:2.2vw;
+     font-weight: 600;
+     color:$black;
+     text-align: center;
+     text-transform: capitalize;
+     margin-top:20px;
+     line-height: 1.5;
+     overflow: hidden; 
+  }
+}
+
+.service_card{
+  @extend .dflex;
+  flex-wrap: wrap;
+  grid-gap:1vw;
+  justify-content: flex-start;
+  margin:60px 0;
+  .card{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width:calc(96% / 4);
+    border:1px solid #f0f0f0;
+    border-radius: 8px;
+    background-color: $white;
+    padding:2.8vw 3.4vw;
+    height:16.67vw;
+    position:relative;
+    top:0;
+    transition:all .3s ease-in-out;
+    &:hover{
+      box-shadow: rgba(0,0,0,0.45) 0px 25px 20px -20px;
+      cursor:pointer;
+      top:-5px;
+    }
+    &.dark{
+      background-color:$black;
+      color:$white;
+      .line{
+        position: absolute;
+        top:0;
+        right:3.8vw;
+        width:4.5vw;
+      }
+      h2{
+        color:$white;
+        text-align: left;
+      }
+      a{
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    .service_icon{
+      width:3.02vw;
+      height:3.02vw;
+      display:inline-flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $dark_green;
+      color:$white;
+      border-radius: 8px;
+    }
+    h3{
+      font-size:1.15vw;
+      font-weight: 600;
+      color:$black;
+      text-transform: capitalize;
+    }
+    a{
+      display: inline-flex;
+      justify-content: flex-start;
+      font-size: .94vw;
+      color:$dark_green;
+      text-decoration: none;
+      align-items: center;
+      span{
+        margin-right:8px;
+      }
+      svg{
+        margin-top:3px;
+      }
+    }
+  }
+}
+
+
+//framer-motion animation will be in next part, keep watching..........
