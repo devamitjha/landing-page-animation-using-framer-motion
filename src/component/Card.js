@@ -2,8 +2,8 @@ import React from 'react';
 import {IoMailOutline, IoChevronForward, IoApps, IoNotifications, IoPieChart, IoNewspaper, IoCard, IoColorFill} from "react-icons/io5";
 import {IconContext} from "react-icons";
 import {motion} from 'framer-motion';
-
-let easing = [0.6,-0.05,0.01,0.99];
+// this has well
+// let easing = [0.6,-0.05,0.01,0.99];
 
 const container = {
     show:{
@@ -24,22 +24,22 @@ const item = {
         }
     }
 }
-
-const title = {
-    hidden:{
-        y:60,
-        opacity:0
-    },
-    show:{
-        y:0,
-        opacity:1,
-        transition:{
-            delay:.2,
-            duration:0.6,
-            ease:easing
-        }
-    }
-};
+// find out what this does
+// const title = {
+//     hidden:{
+//         y:60,
+//         opacity:0
+//     },
+//     show:{
+//         y:0,
+//         opacity:1,
+//         transition:{
+//             delay:.2,
+//             duration:0.6,
+//             ease:easing
+//         }
+//     }
+// };
 
 const hoverEffect = {
     whileHover:{
