@@ -108,7 +108,7 @@ function Card() {
                         <IoColorFill/>
                     </IconContext.Provider>
                 </motion.span>
-                <h3>Facial's<br/>(of different variants)</h3>
+                <h3>Facial's<br/>(different variants)</h3>
                 <a href="#">
                     <span>learn more</span>
                     <IconContext.Provider value={{color:"#14da8f", size:"18px"}}>
@@ -150,7 +150,7 @@ function Card() {
                         <IoPieChart/>
                     </IconContext.Provider>
                 </motion.span>
-                <h3>Makeup<br/>& Edges laying</h3>
+                <h3>Makeup<br/>(& Edges laying)</h3>
                 <a href="#">
                     <span>learn more</span>
                     <IconContext.Provider value={{color:"#14da8f", size:"18px"}}>
@@ -164,7 +164,7 @@ function Card() {
                         <IoCard/>
                     </IconContext.Provider>
                 </motion.span>
-                <h3>Hair Coloring<br/>(& Styling)</h3>
+                <h3>Hair Coloring<br/>(& Hair Styling)</h3>
                 <a href="#">
                     <span>learn more</span>
                     <IconContext.Provider value={{color:"#14da8f", size:"18px"}}>
