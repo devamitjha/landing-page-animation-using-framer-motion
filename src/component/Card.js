@@ -67,7 +67,7 @@ function Card() {
                 animate={{y:0, opacity:1}}
                 exit={{opacity:0}}
                 transition={{duration:.5, delay:1}}
-            >Save Time Managing Social Media<br/>For Your Business.</motion.h2>
+            >Save Time Managing <br/>Your Own Stress. lets do that for you.</motion.h2>
         </div>
 
 
@@ -79,7 +79,7 @@ function Card() {
                         <IoMailOutline/>
                     </IconContext.Provider>
                 </motion.span>
-                <h3>Ui/Ux Design<br/>For Mobile & Web</h3>
+                <h3>Hair cuts<br/>And Hair-styling.</h3>
                 <a href="#">
                     <span>learn more</span>
                     <IconContext.Provider value={{color:"#14da8f", size:"18px"}}>
@@ -94,7 +94,7 @@ function Card() {
                         <IoApps/>
                     </IconContext.Provider>
                 </motion.span>
-                <h3>Web & Mobile<br/>App Development</h3>
+                <h3>Manicure<br/>And Pedicure's</h3>
                 <a href="#">
                     <span>learn more</span>
                     <IconContext.Provider value={{color:"#14da8f", size:"18px"}}>
@@ -108,7 +108,7 @@ function Card() {
                         <IoColorFill/>
                     </IconContext.Provider>
                 </motion.span>
-                <h3>Illustration Design<br/>(Flat, 3d & More)</h3>
+                <h3>Facial's<br/>(of different variants)</h3>
                 <a href="#">
                     <span>learn more</span>
                     <IconContext.Provider value={{color:"#14da8f", size:"18px"}}>
@@ -122,7 +122,7 @@ function Card() {
                         <IoNotifications/>
                     </IconContext.Provider>
                 </motion.span>
-                <h3>Stratagy & Product<br/>Management</h3>
+                <h3>Spa's<br/>And Massage's</h3>
                 <a href="#">
                     <span>learn more</span>
                     <IconContext.Provider value={{color:"#14da8f", size:"18px"}}>
@@ -136,7 +136,7 @@ function Card() {
                         <IoNewspaper/>
                     </IconContext.Provider>
                 </motion.span>
-                <h3>Custome Wordpress<br/>Design & Dev.</h3>
+                <h3>Waxing<br/>(Different variants)</h3>
                 <a href="#">
                     <span>learn more</span>
                     <IconContext.Provider value={{color:"#14da8f", size:"18px"}}>
@@ -150,7 +150,7 @@ function Card() {
                         <IoPieChart/>
                     </IconContext.Provider>
                 </motion.span>
-                <h3>Digital Marketing<br/>& Management</h3>
+                <h3>Makeup<br/>& Edges laying</h3>
                 <a href="#">
                     <span>learn more</span>
                     <IconContext.Provider value={{color:"#14da8f", size:"18px"}}>
@@ -164,7 +164,7 @@ function Card() {
                         <IoCard/>
                     </IconContext.Provider>
                 </motion.span>
-                <h3>Branding Design<br/>(Logo & Packaging)</h3>
+                <h3>Hair Coloring<br/>(& Styling)</h3>
                 <a href="#">
                     <span>learn more</span>
                     <IconContext.Provider value={{color:"#14da8f", size:"18px"}}>

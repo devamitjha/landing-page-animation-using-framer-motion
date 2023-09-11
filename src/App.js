@@ -130,7 +130,7 @@ function App() {
   return (
     <motion.div initial='initial' animate='animate'>
       <motion.header variants={stagger}>
-          <motion.div className="logo_wrapper" variants={header}>Mega<span>RosSs</span></motion.div>
+          <motion.div className="logo_wrapper" variants={header}>Spa<span>City</span></motion.div>
           <motion.div className="menu_container" variants={stagger}>
             <motion.span variants={header}>
               <IconContext.Provider value={{color:"#000", size:"18px", className:"icons_container"}}>
@@ -159,51 +159,47 @@ function App() {
           <motion.h2>
 
             <motion.span variants={firstName} initial="initial" animate="animate" className='first'>
-                <motion.span variants={letter}>D</motion.span>
+                <motion.span variants={letter}>W</motion.span>
+                <motion.span variants={letter}>h</motion.span>
                 <motion.span variants={letter}>e</motion.span>
-                <motion.span variants={letter}>s</motion.span>
-                <motion.span variants={letter}>i</motion.span>
-                <motion.span variants={letter}>g</motion.span>
-                <motion.span variants={letter}>n</motion.span>
-                <motion.span variants={letter} className="second">f</motion.span>
+                <motion.span variants={letter}>r</motion.span>
+                <motion.span variants={letter}>e</motion.span>
+                <motion.span variants={letter} className="second">S</motion.span>
+                <motion.span variants={letter}>e</motion.span>
+                <motion.span variants={letter}>l</motion.span>
+                <motion.span variants={letter}>f</motion.span>
+                <motion.span variants={letter}>l</motion.span>
                 <motion.span variants={letter}>o</motion.span>
-                <motion.span variants={letter}>c</motion.span>
-                <motion.span variants={letter}>u</motion.span>
-                <motion.span variants={letter}>s</motion.span>
+                <motion.span variants={letter}>v</motion.span>
                 <motion.span variants={letter}>e</motion.span>
-                <motion.span variants={letter}>d</motion.span>
             </motion.span>
             <motion.span variants={lastName} initial="initial" animate="animate" className='last'>
-                <motion.span variants={letter}>S</motion.span>
+                <motion.span variants={letter}>M</motion.span>
+                <motion.span variants={letter}>e</motion.span>
+                <motion.span variants={letter}>e</motion.span>
                 <motion.span variants={letter}>t</motion.span>
+                <motion.span variants={letter}>'s</motion.span>
+                <motion.span variants={letter} className="second">S</motion.span>
+                <motion.span variants={letter}>e</motion.span>
+                <motion.span variants={letter}>l</motion.span>
+                <motion.span variants={letter}>f</motion.span>
+                <motion.span variants={letter} className="second">C</motion.span>
                 <motion.span variants={letter}>a</motion.span>
                 <motion.span variants={letter}>r</motion.span>
-                <motion.span variants={letter}>t</motion.span>
-                <motion.span variants={letter}>u</motion.span>
-                <motion.span variants={letter}>p,</motion.span>
-                <motion.span variants={letter} className="second">f</motion.span>
-                <motion.span variants={letter}>o</motion.span>
-                <motion.span variants={letter}>r</motion.span>
-                <motion.span variants={letter} className="second">s</motion.span>
-                <motion.span variants={letter}>t</motion.span>
-                <motion.span variants={letter}>a</motion.span>
-                <motion.span variants={letter}>r</motion.span>
-                <motion.span variants={letter}>t</motion.span>
-                <motion.span variants={letter}>u</motion.span>
-                <motion.span variants={letter}>p</motion.span>
-                <motion.span variants={letter}>s.</motion.span>
+                <motion.span variants={letter}>e</motion.span>
+               
             </motion.span>
           </motion.h2>
 
           <motion.p variants={fadeInUp}>When, while lovely valley teems with vapor around meand <br/>meridian sun strikes the upper impenetrable.</motion.p>
 
           <motion.div className="btn_group" variants={stagger}>
-            <motion.div className="btn btn_primary" variants={btnGroup} whileHover={{scale:1.05}} whileTap={{scale:0.95}}>Hire Me
+            <motion.div className="btn btn_primary" variants={btnGroup} whileHover={{scale:1.05}} whileTap={{scale:0.95}}>Book us
               <IconContext.Provider value={{color:"#14da8f", size:"25px"}}>
                 <IoChevronForwardCircle/>
               </IconContext.Provider>
             </motion.div>
-            <motion.div className="btn btn_secondary" variants={btnGroup} whileHover={{scale:1.05}} whileTap={{scale:0.95}}>Live Chat</motion.div>
+            <motion.div className="btn btn_secondary" variants={btnGroup} whileHover={{scale:1.05}} whileTap={{scale:0.95}}>Sign up</motion.div>
           </motion.div>
 
 
@@ -221,7 +217,7 @@ function App() {
         </div>
 
         <motion.div className="right_content_wrapper">          
-          <motion.img src={process.env.PUBLIC_URL + '/images/bg.png'} alt="bg" initial={{x:200, opacity:0}} animate={{x:0, opacity:1}} transition={{duration:.5, delay:0.8}}/>
+          <motion.img src={process.env.PUBLIC_URL + '/images/Spa-bro.png'} alt="bg" initial={{x:200, opacity:0}} animate={{x:0, opacity:1}} transition={{duration:.5, delay:0.8}}/>
         </motion.div>
       </motion.div>
 
