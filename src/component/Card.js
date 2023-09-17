@@ -2,56 +2,10 @@ import React from 'react';
 import { IoMailOutline, IoChevronForward, IoApps, IoNotifications, IoPieChart, IoNewspaper, IoCard, IoColorFill } from "react-icons/io5";
 import { IconContext } from "react-icons";
 import { motion } from 'framer-motion';
-// this has well
-// let easing = [0.6,-0.05,0.01,0.99];
-
-const container = {
-    show:{
-        transition:{
-            staggerChildren:0.2
-        }
-    }
-};
-
-const item = {
-    hidden:{opacity:0,y:20},
-    show:{
-        opacity:1,
-        y:0,
-        transition:{
-            ease:'easeInOut',
-            duration:.2
-        }
-    }
-}
-// find out what this does
-// const title = {
-//     hidden:{
-//         y:60,
-//         opacity:0
-//     },
-//     show:{
-//         y:0,
-//         opacity:1,
-//         transition:{
-//             delay:.2,
-//             duration:0.6,
-//             ease:easing
-//         }
-//     }
-// };
-
-const hoverEffect = {
-    whileHover:{
-        scale:1.5,rotate:630,borderRadius:"100%"
-    },
-    whileTap:{
-        scale:.8,rotate:630,borderRadius:"100%"
-    },
-}
+ import {item, hoverEffect, container} from '../animations'
 
 
-
+// maybe during another refactor of this code base make a map that takes an array of valuse and maps the value's to create the card element's and it just takes the diffretial properties has props 
 function Card() {
   return (
     <motion.div className="service_container">
@@ -71,7 +25,7 @@ function Card() {
         </div>
 
 
-        <motion.div className="service_card" variants={container} initial="hidden" exit="exit" whileInView="show" viewport={{once:false}}>
+        <motion.div className="service_card | flex-group" variants={container} initial="hidden" exit="exit" whileInView="show" viewport={{once:false}}>
 
             <motion.div className="card" variants={item}>
                 <motion.span className="service_icon" style={{backgroundColor:"#ddfbf9"}} variants={hoverEffect} whileHover="whileHover" whileTap='whileTap'>

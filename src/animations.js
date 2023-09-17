@@ -117,5 +117,52 @@ const star={
   }
 };
 
+const container = {
+  show:{
+      transition:{
+          staggerChildren:0.2
+      }
+  }
+};
 
-export  { easeing , btnGroup , letter, star, stagger , lastName, firstName, fadeInUp, header };
+const item = {
+  hidden:{opacity:0,y:20},
+  show:{
+      opacity:1,
+      y:0,
+      transition:{
+          ease:'easeInOut',
+          duration:.2
+      }
+  }
+}
+// find out what this does
+const title = {
+  hidden:{
+      y:60,
+      opacity:0
+  },
+  show:{
+      y:0,
+      opacity:1,
+      transition:{
+          delay:.2,
+          duration:0.6,
+          ease:easeing
+      }
+  }
+};
+
+const hoverEffect = {
+  whileHover:{
+      scale:1.5,rotate:630,borderRadius:"100%"
+  },
+  whileTap:{
+      scale:.8,rotate:630,borderRadius:"100%"
+  },
+}
+
+
+
+
+export  { easeing , btnGroup , letter, star, stagger , lastName, firstName, fadeInUp, header, hoverEffect, title, container, item };
