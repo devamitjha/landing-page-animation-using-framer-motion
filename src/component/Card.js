@@ -1,7 +1,7 @@
 import React from 'react';
-import {IoMailOutline, IoChevronForward, IoApps, IoNotifications, IoPieChart, IoNewspaper, IoCard, IoColorFill} from "react-icons/io5";
-import {IconContext} from "react-icons";
-import {motion} from 'framer-motion';
+import { IoMailOutline, IoChevronForward, IoApps, IoNotifications, IoPieChart, IoNewspaper, IoCard, IoColorFill } from "react-icons/io5";
+import { IconContext } from "react-icons";
+import { motion } from 'framer-motion';
 // this has well
 // let easing = [0.6,-0.05,0.01,0.99];
 
@@ -193,6 +193,3 @@ function Card() {
 export default Card
 
 
-
-//thanks for watching
-//please subscribe my channel..........

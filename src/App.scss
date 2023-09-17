@@ -1,4 +1,6 @@
+@use "./sass/main.scss";
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
 *{
   margin:0;
   padding:0;
@@ -12,7 +14,7 @@ $white:#fff;
   display:flex;
   justify-content: center;
   align-items: center;
-  width:100%;
+  // width:100%;
 }
 body{
   display: block;
@@ -24,38 +26,34 @@ body{
 }
 header{
   @extend .dflex;
-  justify-content: space-between;
-  padding:0 13%;
-  height:120px;
+  // justify-content: space-between;
+  // padding:0 13%;
+  // height:120px;
+  // padding: 2rem 10em;
+  // margin-inline: auto;
   .logo_wrapper{
     font-size:32px;
     font-weight: 600;
+    cursor: pointer;
     span{
       color:$dark_green;
     }
   }
   .menu_container{
     @extend .dflex;
-    justify-content: flex-end;
-    width:600px;
-    height:56px;
+    justify-content: center;
+    // width:600px;
+    // height:56px;
+    padding-inline: 2em;
     span{
       display:inline-flex;
       align-items: center;
-      justify-content: flex-start;
+      // justify-content: flex-start;
       position: relative;
       height:100%;
+      padding-inline: 3em;
       +span{
-        &:before{
-          content:"";
-          position: absolute;
-          width:2px;
-          height: 50%;
-          background-color:#bdbdbd;
-          left:-36px;
-          top:50%;
-          transform:translateY(-50%);
-        }
+       border-left: solid grey 2px;
       }
       .icon{
         display:inline-flex;
@@ -64,40 +62,43 @@ header{
         }
       }
       &:nth-child(1){
-        width:22%;
+        // width:22%;
       }
       &:nth-child(2){
-        width:42%;
+        // width:42%;
         .icon{
-          margin-right:20px;
+          // margin-right:20px;
         }
       }
-      &.menu{
-        @extend .dflex;
-        width:56px;
-        height:56px;
-        background-color: $dark_green;
-        color:$white;
-        border-radius: 8px;
-        cursor: pointer;
-        flex-direction: column;
-        span{
-          display: block;
-          width:20px;
-          height:3px;
-          background-color:$white;
-          border-radius: 3px;
-          position:relative;
-          +span{
-            margin-top:5px;
-            &:before{
-              content:none;
-            }
-          }
-          &:nth-child(2){
-            margin-left:8px;
-          }
+   
+    }
+  }
+  .menu{
+    @extend .dflex;
+    // max-width:56px;
+    padding: 1em;
+    // aspect-ratio: 1/1;
+    // width: ;
+    background-color: $dark_green;
+    color:$white;
+    border-radius: 8px;
+    cursor: pointer;
+    flex-direction: column;
+    span{
+      display: block;
+      width:20px;
+      height:3px;
+      background-color:$white;
+      border-radius: 3px;
+      position:relative;
+      +span{
+        margin-top:5px;
+        &:before{
+          content:none;
         }
+      }
+      &:nth-child(2){
+        margin-left:8px;
       }
     }
   }
@@ -115,7 +116,7 @@ header{
   border-radius: 16px;
   padding:3%;
   .left_content_wrapper{
-    width:48%;
+    // width:48%;
     h2{
       font-size:3.3vw;
       font-weight: 600;
@@ -187,7 +188,7 @@ header{
     }
   }
   .right_content_wrapper{
-    width:48%;
+    // width:48%;
     @extend .dflex;
     justify-content: flex-end;
     img{
@@ -303,4 +304,10 @@ header{
 }
 
 
-//framer-motion animation will be in next part, keep watching..........
+.imgbx{
+  img{
+    width: 100%;
+    display: block;
+    object-fit: contain;
+  }
+}
