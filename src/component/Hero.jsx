@@ -77,7 +77,7 @@ function Hero (){
         <motion.span variants={star} whileHover={{scale:1.2, rotate:180,borderRadius:'100%',cursor:'pointer'}}><IoStar/></motion.span>
         <motion.span variants={star} whileHover={{scale:1.2, rotate:180,borderRadius:'100%',cursor:'pointer'}}><IoStar/></motion.span>
     </IconContext.Provider>
-    <motion.p className="more_review" variants={star}>More then 50+ people taking services.</motion.p>
+    <motion.p className="more_review" variants={star}>More then 450+ people taking services.</motion.p>
   </motion.div>
 </motion.div>
 
