@@ -7,7 +7,6 @@ import { motion } from 'framer-motion';
 import {IoMailOutline } from 'react-icons/io5';
 import {IconContext} from "react-icons";
 
-import Hamburger from '../component/hamburger';
 import {  header, stagger} from "../animations";
 
 
