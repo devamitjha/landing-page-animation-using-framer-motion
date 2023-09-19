@@ -6,6 +6,7 @@ import './sass/main.scss';
 
 import Header from './component/Header.jsx';
 import Card from './component/Card';
+// import ServiceSection from './component/card.jsx'
 import Hero from './component/Hero';
 
 import {motion} from 'framer-motion';
@@ -18,6 +19,11 @@ function App() {
     <Header />
       <Hero />
       <Card />
+      {/* {
+        cardsData.map( (card)=><Card backgroundColor={card.backgroundColor} Icontype={card.Icontype} servicename={card.servicename}/> )
+      }
+
+      <ServiceSection /> */}
 
 
 

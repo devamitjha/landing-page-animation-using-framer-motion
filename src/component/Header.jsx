@@ -8,6 +8,7 @@ import {IoMailOutline } from 'react-icons/io5';
 import {IconContext} from "react-icons";
 
 import {  header, stagger} from "../animations";
+import Hamburger from './hamburger';
 
 
 
@@ -38,9 +39,7 @@ return(
         </motion.div>
     
         <motion.span className="menu" variants={header}>
-                <span></span>
-                <span></span>
-                <span></span>
+               <Hamburger />
             </motion.span>   
     </motion.header>
     </>

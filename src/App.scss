@@ -24,7 +24,26 @@ body{
   overflow-x: hidden;
   font-family: 'Poppins', sans-serif;  
 }
+dialog{
+  z-index: -20000;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #14da8f;
+  width: 100vh;
+  aspect-ratio: 1/1;
+
+
+  &::backdrop{
+    background-color: #000000;
+
+  }
+}
 header{
+  .modalbtn{
+    border: none;
+    background-color: inherit;
+  }
   @extend .dflex;
   justify-content: space-between;
   // padding:0 13%;
@@ -323,3 +342,5 @@ header{
     object-fit: contain;
   }
 }
+
+
