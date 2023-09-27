@@ -1,22 +1,25 @@
 import React, { useState } from "react";
 import "../sass/main.scss";
-
-import Modal from "./modal";
+import {motion} from "framer-motion"
+// import Modal from "./modal";
 
 function Hamburger() {
-  const [isOpen, setIsOpen ] = useState( false )
+  // const [isOpen, setIsOpen ] = useState( false )
   
   
   return (
     <>
-      <button className="modalbtn">
+      <motion.button className="modalbtn"
+      
+      whileHover={{ scale: 1.1 }}
+      whileTap={{ scale: 0.9 }}
+      // onClick={open}
+      >
         <span></span>
         <span></span>
         <span></span>
-      </button>
-      <Modal open={ isOpen } onClose={ ( ) => setIsOpen( false ) } >
-        this is content_wrapper
-      </Modal>
+      </motion.button>
+   
     </>
   );
 }

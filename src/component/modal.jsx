@@ -41,7 +41,7 @@ export default function Modal({ open, children, onClose }) {
   return (
     <>
       {children}
-      <button onClick={onClose}>close</button>
+      <button onClick={ onClose }>close</button>
     </>
   );
 }

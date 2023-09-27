@@ -2,6 +2,7 @@
 import React from 'react';
 import './App.scss';
 import './sass/main.scss';
+import './sass/modal.scss';
 
 
 import Header from './component/Header.jsx';
