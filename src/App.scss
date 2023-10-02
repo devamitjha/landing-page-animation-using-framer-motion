@@ -23,22 +23,24 @@ body{
   background-color:$white;
   overflow-x: hidden;
   font-family: 'Poppins', sans-serif;  
-}
-dialog{
-  z-index: -20000;
   position: absolute;
-  top: 0;
-  right: 0;
-  background-color: #14da8f;
-  width: 100vh;
-  aspect-ratio: 1/1;
-
-
-  &::backdrop{
-    background-color: #000000;
-
-  }
+  // z-index: -1;
 }
+// dialog{
+//   // z-index: -20000;
+//   position: absolute;
+//   top: 0;
+//   right: 0;
+//   background-color: #14da8f;
+//   width: 100vh;
+//   aspect-ratio: 1/1;
+
+
+//   &::backdrop{
+//     background-color: #000000;
+
+//   }
+// }
 header{
   .modalbtn{
     border: none;

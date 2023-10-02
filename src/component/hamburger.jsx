@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import "../sass/main.scss";
 import {motion} from "framer-motion"
-// import Modal from "./modal";
+import Modal from "./modal";
 
 function Hamburger() {
-  // const [isOpen, setIsOpen ] = useState( false )
-  
+  const [isOpen, setIsOpen ] = useState( false );
+  const close = ()=> setIsOpen(false);
+  const open = ()=> setIsOpen(true);
   
   return (
     <>
@@ -13,12 +14,13 @@ function Hamburger() {
       
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.9 }}
-      // onClick={open}
+      onClick={()=>(isOpen ? close() : open())}
       >
         <span></span>
         <span></span>
         <span></span>
       </motion.button>
+      {isOpen && <Modal isOpen={isOpen}  handleClose={close}/> }
    
     </>
   );
