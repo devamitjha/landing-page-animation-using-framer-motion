@@ -12,7 +12,7 @@ import Hamburger from './hamburger';
 
 
 
-function Header(){
+function Header( {openModal}){
 
 
 return( 
@@ -39,7 +39,7 @@ return(
         </motion.div>
     
         <motion.span className="menu" variants={header}>
-               <Hamburger />
+               <Hamburger onClick={ openModal } />
             </motion.span>   
     </motion.header>
     </>

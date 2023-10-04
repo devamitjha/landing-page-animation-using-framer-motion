@@ -1,26 +1,21 @@
-import React, { useState } from "react";
+import React from "react";
 import "../sass/main.scss";
 import {motion} from "framer-motion"
-import Modal from "./modal";
 
-function Hamburger() {
-  const [isOpen, setIsOpen ] = useState( false );
-  const close = ()=> setIsOpen(false);
-  const open = ()=> setIsOpen(true);
+function Hamburger( {onClick} ) {
   
   return (
     <>
-      <motion.button className="modalbtn"
-      
+      <motion.div 
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.9 }}
-      onClick={()=>(isOpen ? close() : open())}
+      onClick={onClick}
+
       >
         <span></span>
         <span></span>
         <span></span>
-      </motion.button>
-      {isOpen && <Modal isOpen={isOpen}  handleClose={close}/> }
+      </motion.div>
    
     </>
   );

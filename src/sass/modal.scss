@@ -15,19 +15,8 @@
 }
 
 body {
-  background: var(--light);
   font-family: "Montserrat", sans-serif;
-  height: 100%;
-  // overflow-y: hidden;
-}
-
-main {
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  padding: 2rem;
-  align-items: center;
-  overflow-y: hidden;
+ 
 }
 
 
@@ -66,19 +55,18 @@ main {
   left: 0;
   height: 100%;
   width: 100%;
-  background: #000000e1;
+  // background: #000000e1;
+    background: #031a1181;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow-y: hidden;
-  z-index: 200;
-position: absolute;
+ 
 }
 
 .modal {
   width: clamp(50%, 700px, 90%);
-  height: min(50%, 300px);
-
+aspect-ratio: 2/1;
   margin: auto;
   padding: 0 2rem;
   border-radius: 12px;
@@ -90,8 +78,7 @@ position: absolute;
 }
 
 .orange-gradient {
-  background: var(--gradient);
-}
+  background-image: linear-gradient(to bottom, #14da8f, #20dc94, #2adf99, #32e19e, #3ae3a3);}
 
 .green-gradient {
   background: var(--gradient2);

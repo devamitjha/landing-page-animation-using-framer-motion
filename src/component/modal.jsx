@@ -1,7 +1,11 @@
 import { useEffect } from "react";
 import { motion } from "framer-motion";
 import { stateLogger } from "../statelogger";
-import Backdrop from "../component/Backdrop";
+import Backdrop from "./Backdrop";
+import '../sass/modal.scss'
+
+
+
 
 const dropIn = {
   hidden: {
@@ -117,14 +121,34 @@ const gifYouUp = {
   },
 };
 
-const Modal = ({ handleClose, text, type }) => {
-  // Log state
+
+// const StyledModal = div.styled`
+// width: 20rem;
+// heigth: 20rem;
+// display: flex;
+// align-items: center;
+// justify-content: center;
+
+
+
+// `
+
+
+
+
+
+function ModalBTN({showModal, handleClose, text, type, setShowModal }){
+
   useEffect(() => {
     stateLogger("Modal", true);
     return () => stateLogger("Modal", false);
   }, []);
+  return(
+    <>
 
-  return (
+    { showModal ? 
+    <div>
+    
     <Backdrop onClick={handleClose}>
       {type === "dropIn" && (
         <motion.div
@@ -231,8 +255,16 @@ const Modal = ({ handleClose, text, type }) => {
         </motion.div>
       )}
     </Backdrop>
-  );
-};
+    </div> : null }
+
+    </>
+
+
+  )
+
+}
+
+
 
 const ModalText = ({ text }) => (
   <div className="modal-text">
@@ -253,8 +285,7 @@ const ModalButton = ({ onClick, label }) => (
     whileTap={{ scale: 0.95 }}
     onClick={onClick}
   >
-    {label}
+&#10060;
   </motion.button>
 );
-
-export default Modal;
+export default ModalBTN
